@@ -1,0 +1,95 @@
+body {
+  // Handle dynamic font:
+  font-optical-sizing: auto;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 800px;
+    z-index: -3;
+    background-image: url(/banner.jpg);
+    background-size: 100% auto;
+    background-position: center 0;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 600px;
+    left: 0;
+    right: 0;
+    height: 200px;
+    z-index: -3;
+    background: #fff;
+    background: linear-gradient(0deg, white 0%, transparent 100%);
+  }
+}
+
+.z--1 {
+  z-index: -1 !important;
+}
+.z--2 {
+  z-index: -2 !important;
+}
+
+.font-sans-serif {
+  font-family: $font-family-sans-serif !important;
+}
+.font-cursive {
+  font-family: $font-family-cursive !important;
+}
+
+.border-yellow {
+  border-color: $yellow !important;
+}
+
+.container {
+  max-width: 800px !important;
+}
+
+// Useful classes:
+.disc {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.highlight {
+  position: relative;
+
+  &::before {
+    content: ' ';
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    bottom: 0.2em;
+    height: 0.4em;
+    background: $yellow;
+  }
+}
+
+.inset-0 {
+  inset: 0 !important;
+}
+
+// Actual custom rules:
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 2.4em;
+    height: 2.4em;
+  }
+}
+
+.picture img {
+  max-height: 15em;
+}
+
+#map {
+  min-height: 300px;
+}
