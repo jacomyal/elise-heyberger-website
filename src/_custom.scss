@@ -56,3 +56,7 @@ body {
 #map {
   min-height: 460px;
 }
+
+.bg-primary-transparent {
+  background: transparentize($primary, 0.1) !important;
+}
