@@ -24,6 +24,10 @@
 .text-light .highlight {
   box-shadow: inset 0 -0.6em $dark-blue;
 }
+.text-light .text-muted {
+  color: $light !important;
+  opacity: 0.7;
+}
 
 .inset-0 {
   inset: 0 !important;
@@ -77,4 +81,14 @@ body {
 
 .grayscale {
   filter: grayscale(1);
+}
+
+#a-propos img {
+  @include media-breakpoint-down(md) {
+    max-width: 70%;
+    margin: auto;
+  }
+  @include media-breakpoint-up(md) {
+    max-width: 100%;
+  }
 }
