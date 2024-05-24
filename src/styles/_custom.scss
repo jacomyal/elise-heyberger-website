@@ -54,6 +54,7 @@ body {
 }
 
 .picture img {
+  width: auto;
   max-height: 15em;
 }
 
@@ -61,9 +62,6 @@ body {
   #map {
     min-height: 300px;
   }
-}
-#map {
-  //min-height: 300px;
 }
 
 #insta {
@@ -88,12 +86,14 @@ body {
     text-align: justify;
     img {
       max-width: 70%;
+      height: auto;
       margin: auto;
     }
   }
   @include media-breakpoint-up(md) {
     img {
       max-width: 100%;
+      height: auto;
     }
   }
 }
